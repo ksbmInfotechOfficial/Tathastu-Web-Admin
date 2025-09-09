@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Background animation */
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-bg {
+    animation: gradientBackground 15s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  /* Slide-in animation for the login form */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-login {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  
+
+
+  
