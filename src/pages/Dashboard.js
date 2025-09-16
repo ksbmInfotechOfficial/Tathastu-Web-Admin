@@ -496,7 +496,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await axios.get(`https://tathashtuapi.ksdelhi.net/api/admin/getAdminDashboard`, {
+        const res = await axios.get(`https://apitathastu.astroone.in/api/admin/getAdminDashboard`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         setStats(res.data.data);

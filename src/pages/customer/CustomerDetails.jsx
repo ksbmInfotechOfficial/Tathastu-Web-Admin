@@ -150,7 +150,7 @@ const handleUpdateRemainingSessions = async (purchaseId) => {
 
   try {
     setIsUpdating(true);
-    const res = await fetch(`https://tathashtuapi.ksdelhi.net/api/admin/update-remaining-sessions/${purchaseId}`, {
+    const res = await fetch(`https://apitathastu.astroone.in/api/admin/update-remaining-sessions/${purchaseId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

@@ -630,7 +630,7 @@ const Booking = () => {
 
     try {
       await axios.put(
-        `https://tathashtuapi.ksdelhi.net/api/admin/bookings/${_id}/schedule`,
+        `https://apitathastu.astroone.in/api/admin/bookings/${_id}/schedule`,
         { date: scheduledDate, startTime, endTime },
         { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
       )

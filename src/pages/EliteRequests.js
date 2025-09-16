@@ -23,7 +23,7 @@ const EliteRequests = () => {
     setLoading(true);
     try {
       const res = await axios.get(
-        'https://tathashtuapi.ksdelhi.net/api/admin/get_super_elite_package_request',
+        'https://apitathastu.astroone.in/api/admin/get_super_elite_package_request',
         {
           params: {
             page,
@@ -75,7 +75,7 @@ const EliteRequests = () => {
 
     try {
       await axios.put(
-        `https://tathashtuapi.ksdelhi.net/api/admin/update_superelite_request_price/${parentId}`,
+        `https://apitathastu.astroone.in/api/admin/update_superelite_request_price/${parentId}`,
         { price: numericPrice, variantId: selectedVariantId},
         {
           headers: {
@@ -95,7 +95,7 @@ const EliteRequests = () => {
   const updateStatus = async (requestId, newStatus) => {
     try {
       await axios.put(
-        `https://tathashtuapi.ksdelhi.net/api/admin/update_super_elite_status/${requestId}`,
+        `https://apitathastu.astroone.in/api/admin/update_super_elite_status/${requestId}`,
         { status: newStatus },
         {
           headers: {
@@ -116,7 +116,7 @@ const EliteRequests = () => {
 
     try {
       await axios.post(
-        `https://tathashtuapi.ksdelhi.net/api/admin/deduct-session-and-update/${selectedDeductVariantId}`,
+        `https://apitathastu.astroone.in/api/admin/deduct-session-and-update/${selectedDeductVariantId}`,
         {},
         {
           headers: {

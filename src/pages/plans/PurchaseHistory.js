@@ -12,7 +12,7 @@
 
 //   const fetchHistory = async () => {
 //     try {
-//       const res = await axios.get('https://tathashtuapi.ksdelhi.net/api/admin/get_all_purchase_history', {
+//       const res = await axios.get('https://apitathastu.astroone.in/api/admin/get_all_purchase_history', {
 //         params: { page, limit },
 //         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
 //       });
@@ -159,7 +159,7 @@
 
 //   const fetchHistory = async () => {
 //     try {
-//       const res = await axios.get('https://tathashtuapi.ksdelhi.net/api/admin/get_all_purchase_history', {
+//       const res = await axios.get('https://apitathastu.astroone.in/api/admin/get_all_purchase_history', {
 //         params: { page, limit, search },
 //         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
 //       });
@@ -320,7 +320,7 @@ const PurchaseHistory = () => {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get('https://tathashtuapi.ksdelhi.net/api/admin/get_all_purchase_history', {
+      const res = await axios.get('https://apitathastu.astroone.in/api/admin/get_all_purchase_history', {
         params: { page, limit, search },
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });

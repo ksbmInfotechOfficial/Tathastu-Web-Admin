@@ -1,2 +1,2 @@
-export const APIURL = 'https://tathashtuapi.ksdelhi.net/api'
-export const IMAGEURL = 'https://tathashtuapi.ksdelhi.net'
+export const APIURL = 'https://apitathastu.astroone.in/api'
+export const IMAGEURL = 'https://apitathastu.astroone.in'

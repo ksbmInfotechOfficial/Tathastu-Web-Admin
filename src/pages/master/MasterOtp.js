@@ -8,7 +8,7 @@ const MasterOtpPage = () => {
   const [loading, setLoading] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const API_BASE_URL = 'https://tathashtuapi.ksdelhi.net/api/admin';
+  const API_BASE_URL = 'https://apitathastu.astroone.in/api/admin';
 
   useEffect(() => {
     const fetchOtp = async () => {

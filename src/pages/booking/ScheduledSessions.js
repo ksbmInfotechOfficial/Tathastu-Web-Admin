@@ -27,8 +27,8 @@
 
 //       const endpoint =
 //         activeTab === 'scheduled'
-//           ? 'https://tathashtuapi.ksdelhi.net/api/admin/bookings/scheduled'
-//           : 'https://tathashtuapi.ksdelhi.net/api/admin/bookings/completed'
+//           ? 'https://apitathastu.astroone.in/api/admin/bookings/scheduled'
+//           : 'https://apitathastu.astroone.in/api/admin/bookings/completed'
 
 //       const res = await axios.get(endpoint, {
 //         params: { page, limit },
@@ -50,7 +50,7 @@
 //     try {
 //       setUpdating(bookingId)
 //       await axios.patch(
-//         `https://tathashtuapi.ksdelhi.net/api/admin/bookings/${bookingId}/complete`,
+//         `https://apitathastu.astroone.in/api/admin/bookings/${bookingId}/complete`,
 //         {},
 //         {
 //           headers: {
@@ -220,8 +220,8 @@ const ScheduledSessions = () => {
 
       const endpoint =
         activeTab === 'scheduled'
-          ? 'https://tathashtuapi.ksdelhi.net/api/admin/bookings/scheduled'
-          : 'https://tathashtuapi.ksdelhi.net/api/admin/bookings/completed'
+          ? 'https://apitathastu.astroone.in/api/admin/bookings/scheduled'
+          : 'https://apitathastu.astroone.in/api/admin/bookings/completed'
 
       const res = await axios.get(endpoint, {
         params: { page, limit },
@@ -243,7 +243,7 @@ const ScheduledSessions = () => {
     try {
       setUpdating(bookingId)
       await axios.patch(
-        `https://tathashtuapi.ksdelhi.net/api/admin/bookings/${bookingId}/complete`,
+        `https://apitathastu.astroone.in/api/admin/bookings/${bookingId}/complete`,
         {},
         {
           headers: {
@@ -286,7 +286,7 @@ const ScheduledSessions = () => {
         reason: reason,
       }
       await axios.put(
-        `https://tathashtuapi.ksdelhi.net/api/admin/bookings/${sessionToReschedule._id}/re_schedule`,
+        `https://apitathastu.astroone.in/api/admin/bookings/${sessionToReschedule._id}/re_schedule`,
         rescheduleData,
         {
           headers: {
